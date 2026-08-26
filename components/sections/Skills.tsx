@@ -60,7 +60,7 @@ export function Skills() {
               </span>
               {/* <span className="text-[11.5px] text-text-2 tracking-[0.06em]">{lang.years}</span> */}
             </div>
-            <div className="text-[12px] text-text-2 tracking-[0.03em]">{lang.note}</div>
+            <div className="text-[13px] text-text-2 tracking-[0.03em]">{lang.note}</div>
           </div>
         ))}
       </div>
@@ -78,7 +78,7 @@ export function Skills() {
               className="bg-surface-2 flex flex-col items-center justify-center py-8 px-4 gap-4 transition-all duration-200 hover:bg-surface-3 group cursor-default"
             >
               {Icon && <Icon className="text-[2.5rem] text-text-2 group-hover:text-text transition-colors duration-200" />}
-              <span className="hidden md:block font-sans font-semibold text-[13px] tracking-wide text-text-2 group-hover:text-text transition-colors duration-200">
+              <span className="hidden md:block font-mono font-semibold text-[13px] tracking-wide text-text-2 group-hover:text-text transition-colors duration-200">
                 {item.name}
               </span>
             </div>

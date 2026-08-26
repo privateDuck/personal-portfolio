@@ -1,11 +1,18 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Syne, IBM_Plex_Mono } from 'next/font/google';
+import { Syne, IBM_Plex_Mono, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
 
 const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '600', '700', '800'],
   variable: '--font-syne',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-space-grotesk',
   display: 'swap',
 });
 
@@ -16,6 +23,14 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: '--font-ibm-plex-mono',
   display: 'swap',
 });
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['200', '400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-jet-brains-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'privateDuck',
@@ -37,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${ibmPlexMono.variable}`}>
+    <html lang="en" className={`${syne.variable} ${ibmPlexMono.variable} ${jetBrainsMono.variable} ${spaceGrotesk.variable}`}>
       <body className="font-mono antialiased">{children}</body>
     </html>
   );

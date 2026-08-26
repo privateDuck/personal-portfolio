@@ -85,8 +85,8 @@ export const heroStats = [
 export const aboutStats = [
   { num: '42', unit: '', label: 'Default Seed &\nAnswer to Life' },
   { num: '0', unit: '', label: 'Linker errors\nallowed in CI' },
-  { num: 'clang-cl', unit: '', label: 'Primary\nCompiler' },
-  { num: 'x86_64', unit: '', label: 'Architecture\nof Choice' },
+  { num: 'clang', unit: '', label: 'Primary\nCompiler' },
+  { num: 'x64', unit: '', label: 'Architecture\nof Choice' },
 ];
 
 export interface AboutMetaRow {
@@ -98,7 +98,7 @@ export interface AboutMetaRow {
 export const aboutMetaRows: AboutMetaRow[] = [
   { key: 'Status', value: 'BSc (Hons) Computer Science Undergraduate, University of Kelaniya' },
   { key: 'Primary lang', value: 'C++ / Python / C# / Rust / TS' },
-  { key: 'Domains', value: 'Systems · Web · ML · Automation · Data Science' },
+  { key: 'Domains', value: 'Systems / Web / ML / Automation / Data Science' },
   { key: 'Currently on', value: 'Finishing up projects.' },
   { key: 'OS', value: 'Windows' },
   /* { key: 'Resume', value: 'Download PDF ↓', href: 'resume.pdf' }, */

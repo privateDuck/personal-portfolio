@@ -41,8 +41,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-syne)', 'sans-serif'],
-        mono: ['var(--font-ibm-plex-mono)', 'Courier New', 'monospace'],
+        sans: ['var(--font-space-grotesk)', 'sans-serif'],
+        mono2: ['var(--font-jet-brains-mono)', 'Courier New', 'monospace'],
+        mono: ['var(--font-ibm-plex-mono)', 'var(--font-jet-brains-mono)', 'monospace']
       },
       letterSpacing: {
         widest: '0.2em',

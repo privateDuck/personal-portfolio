@@ -11,7 +11,7 @@ function CodeCard() {
           <span className="w-2 h-2 rounded-full bg-border-2" />
         </div>
       </div>
-      <pre className="p-6 text-[14.5px] leading-7 overflow-x-auto font-mono">
+      <pre className="p-6 text-[13px] leading-7 overflow-x-auto font-mono2">
         <span className="text-text-3 italic">{'// --- Systems Programmer ---'}</span>{'\n'}
         {'\n'}
         <span className="text-code-keyword">{'class'}</span>{' '}<span className="text-code-type">{'Engineer'}</span>{' {'}{'\n'}
@@ -80,9 +80,9 @@ export function Hero() {
           <a href="#projects" className="text-center font-mono text-[11px] tracking-[0.1em] uppercase no-underline py-[0.65rem] px-6 bg-accent text-white border border-accent transition-colors duration-200 hover:bg-accent-hi hover:border-accent-hi">
             View Projects
           </a>
-          {/* <a href="resume.pdf" className="text-center font-mono text-[11px] tracking-[0.1em] uppercase no-underline py-[0.65rem] px-6 bg-transparent text-text-2 border border-border-2 transition-colors duration-200 hover:text-text hover:border-text-3">
-            Download CV
-          </a> */}
+          <a href="https:/github.com/privateDuck" className="text-center font-mono text-[11px] tracking-[0.1em] uppercase no-underline py-[0.65rem] px-6 bg-transparent text-text-2 border border-border-2 transition-colors duration-200 hover:text-text hover:border-text-3">
+            Github Profile
+          </a>
           <a href="#contact" className="text-center font-mono text-[11px] tracking-[0.1em] uppercase no-underline py-[0.65rem] px-6 bg-transparent text-text-2 border border-border-2 transition-colors duration-200 hover:text-text hover:border-text-3">
             Get in Touch
           </a>

@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <>
-      {/* Full-screen background blur overlay on mobile when menu is open */}
+      {/* Full-screen background blur overlay on mobile when menu is open. I think */}
       {mobileOpen && (
         <div
           className="fixed inset-0 bg-bg/80 backdrop-blur-md z-[90] md:hidden animate-fade-in"
@@ -23,7 +23,7 @@ export function Navbar() {
           privateDuck<span className="text-accent">.</span>
         </a>
 
-        <ul className="hidden md:flex gap-8 list-none">
+        <ul className="hidden md:flex gap-8 list-none absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -35,11 +35,6 @@ export function Navbar() {
             </li>
           ))}
         </ul>
-
-        <div className="hidden md:flex items-center gap-2 text-[11px] tracking-[0.06em] text-green border border-green-dim py-[0.3rem] px-[0.85rem] bg-green-dim/50">
-          <span className="w-1.5 h-1.5 rounded-full bg-green flex-shrink-0" />
-          PRIVATE
-        </div>
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}

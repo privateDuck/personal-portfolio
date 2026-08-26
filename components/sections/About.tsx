@@ -33,7 +33,7 @@ export function About() {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 relative z-[1]">
         <div>
-          <h2 className="font-mono font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] tracking-tight text-text leading-[1.05]">
+          <h2 className="font-mono2 font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] tracking-tight text-text leading-[1.05]">
             EVERY μs COUNTS<br /> WHEN THE BUDGET IS ms
           </h2>
           <p className="text-[15px] text-text-2 leading-[1.85] mt-4 mb-7">
@@ -57,13 +57,13 @@ export function About() {
           </p> */}
         </div>
 
-        <div className="flex flex-col border border-border">
+        <div className="font-mono2 flex flex-col border border-border">
           {aboutMetaRows.map((row) => (
             <div
               key={row.key}
-              className="grid grid-cols-[0.8fr_1.2fr] border-b border-border last:border-b-0 text-[13.5px]"
+              className="grid grid-cols-[0.8fr_1.2fr] border-b border-border last:border-b-0 text-[13px]"
             >
-              <div className="px-4 py-3 text-text-2 text-[11.5px] tracking-[0.1em] uppercase bg-surface-2 border-r border-border flex items-center">
+              <div className="px-4 py-3 text-text-2 text-[12px] tracking-[0.1em] uppercase bg-surface-2 border-r border-border flex items-center">
                 {row.key}
               </div>
               <div className="px-4 py-3 text-text-2 flex items-center leading-relaxed">

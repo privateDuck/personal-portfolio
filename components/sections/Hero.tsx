@@ -66,8 +66,8 @@ export function Hero() {
           </span>
           <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-text-3">Available for opportunities</span>
         </div> */}
-
-        <h1 className="font-sans font-bold text-[clamp(2.2rem,8vw,5.5rem)] leading-tight tracking-tight uppercase text-text mb-6 break-words">
+        {/* Kind of a hacky way to stop the letters of the surname from breaking */}
+        <h1 className="font-sans font-bold text-[clamp(2.2rem,8vw,5.5rem)] lg:text-[clamp(2.2rem,8vw,3.5rem)] leading-tight tracking-tight uppercase text-text mb-6 break-words">
           Pansilu<br />
           <span className="text-text-3">Jayawardane</span>
         </h1>
@@ -89,7 +89,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-[1] flex flex-col gap-6">
+      <div className="relative z-[1] flex flex-col gap-6 w-full">
         <div className="hidden lg:block">
           <CodeCard />
         </div>

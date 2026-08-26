@@ -1,7 +1,7 @@
 import { projects } from '@/config/portfolio-data';
 import type { ProjectData } from '@/config/portfolio-data';
 
-function ProjectCard({ project }: { project: ProjectData }) {
+function ProjectCard({ project, index }: { project: ProjectData, index: string }) {
   const isExternal = project.href.startsWith('http');
   let statusClass = '';
   if (project.statusType == 'wip') {
@@ -25,7 +25,7 @@ function ProjectCard({ project }: { project: ProjectData }) {
         className={`hidden md:block font-sans font-bold text-[1.8rem] md:text-[2rem] tracking-tight leading-none pt-1 select-none transition-colors group-hover:text-accent ${project.featured ? 'text-accent-dim' : 'text-border-2'
           }`}
       >
-        {project.index}
+        {index}
       </div>
 
       <div>
@@ -85,8 +85,8 @@ export function Projects() {
       </div>
 
       <div className="flex flex-col gap-px bg-border border border-border relative z-[1]">
-        {projects.map((project) => (
-          <ProjectCard key={project.index} project={project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={index + projects.length} project={project} index={index < 9 ? `0${index + 1}` : `${index + 1}`} />
         ))}
       </div>
     </section>

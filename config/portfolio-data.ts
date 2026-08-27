@@ -192,7 +192,7 @@ export const projects: ProjectData[] = [
     name: 'Geodesic Trajectory Solver',
     desc: 'A general-relativistic trajectory solver that integrates geodesic equations via the Hamiltonian formulation, with custom integrators and per-metric stopping conditions. Supports Minkowski, Kerr-Newman (Kerr-Schild and Boyer-Lindquist forms), FLRW, Godel and Rindler spacetimes, with room for user-defined metrics. Runs in both precomputed and real-time modes, and handles multi-body systems.',
     stack: ['C++', 'General Relativity', 'Numerical Integration'],
-    href: 'https://github.com/privateDuck/geodesic-trajectory-solver',
+    href: 'https://github.com/privateDuck/geodesic-solver',
     featured: false,
   },
   {
@@ -212,12 +212,12 @@ export const projects: ProjectData[] = [
     name: 'Funclib',
     desc: 'A header-only C++ library for defining and evaluating mathematical functions at runtime, in the spirit of ExprTk. Built primarily as a learning exercise; does not reach ExprTk-level performance.',
     stack: ['C++', 'Header-only'],
-    href: '#',
+    href: 'https://github.com/privateDuck/funclib',
     featured: false,
   },
   {
     domain: 'Graphics / Computational Physics',
-    status: 'In Progress',
+    status: 'Currently Private',
     statusType: 'wip',
     name: 'Real-Time Kerr-Newman Black Hole Renderer',
     desc: 'A real-time renderer for a Kerr-Newman black hole: ray-marched null geodesics for physically accurate light deflection near the event horizon, a rendered accretion disk, and orbital motion. Built as a toy project alongside the geodesic trajectory solver.',
